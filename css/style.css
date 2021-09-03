@@ -94,7 +94,8 @@ header{
 }
 
 .main{
-    display: block;
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
 }
 
 #webDevelopment{
@@ -110,7 +111,7 @@ header{
 
 #cards{
     display: grid;
-    grid: 1fr / 280px 280px 280px;
+    grid: 1fr / repeat(3, 1fr);
     background-color: var(--bg-article-primary-color);
     gap: 20px;
     padding: 30px;
